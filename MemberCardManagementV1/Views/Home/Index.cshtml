@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>QUẢN LÝ THẺ TÍCH ĐIỂM</h1>
+    <p class="lead">Chào mừng bạn đến với phần mềm Quản lý thẻ tích điểm.</p>
+    <p><a href="https://github.com/sapo-tech/backend-home-test" target="_blank" class="btn btn-primary btn-lg">Tìm hiểu thêm &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h3>Thẻ tích điểm</h3>
+        <ul>
+            <li>Về mặt thực tế, thẻ tích điểm là thứ chủ shop in ra sau đó phát cho người mua.</li>
+            <li>Về mặt hệ thống, là đối tượng ghi nhận các thông tin ưu đãi của người mua.</li>
+        </ul>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "MemberCards")">Tìm hiếu thêm &raquo;</a></p>
+    </div>
+    <div class="col-md-3">
+        <h3>Hạng thẻ</h3>
+        <ul>
+            <li>Là trường để phân loại thẻ tích điểm, với các hạng khác nhau, khách hàng sẽ có các ưu đãi riêng.</li>
+        </ul>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "MemberCardCategories")">Tìm hiếu thêm &raquo;</a></p>
+    </div>
+    <div class="col-md-3">
+        <h3>Chính sách tích điểm</h3>
+        <ul>
+            <li>Thiết lập tỷ lệ quy đổi từ doanh thu ra điểm.</li>
+        </ul>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Configs")">Tìm hiếu thêm &raquo;</a></p>
+    </div>
+    <div class="col-md-3">
+        <h3>Giao dịch tích điểm</h3>
+        <ul>
+            <li>Các giao dịch tăng/ giảm điểm hoặc doanh thu tác động lên thẻ tích điểm của khách hàng.</li>
+        </ul>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Transactions")">Tìm hiếu thêm &raquo;</a></p>
+    </div>
+</div>

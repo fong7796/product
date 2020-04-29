@@ -1,0 +1,58 @@
+﻿@model MemberCardManagementV1.Models.Transaction
+
+@{
+    ViewBag.Title = "Chi tiết giao dịch tích điểm";
+}
+
+<h2>Chi tiết</h2>
+
+<div>
+    <h4>Giao dịch tích điểm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberCardNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemberCardNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Point)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Point)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Revenue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Revenue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifyDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.TransactionID }) |
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</p>

@@ -1,0 +1,73 @@
+﻿@model MemberCardManagementV1.Models.MemberCardCategory
+
+@{
+    ViewBag.Title = "Chi tiết hạng thẻ";
+}
+
+<h2>Chi tiết</h2>
+
+<div>
+    <h4>Hạng thẻ</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberCardCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemberCardCategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PromotionRevenue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PromotionRevenue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfigName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfigName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifyDate)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MemberCardCategoryID }) |
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</p>

@@ -1,0 +1,42 @@
+﻿@model MemberCardManagementV1.Models.Config
+
+@{
+    ViewBag.Title = "Chi tiết chính sách tích điểm";
+}
+
+<h2>Chi tiết</h2>
+
+<div>
+    <h4>Chính sách tích điểm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfigName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfigName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfigValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfigValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDefault)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDefault)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.ConfigID }) |
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</p>

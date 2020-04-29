@@ -1,0 +1,89 @@
+﻿@model Models.MemberCard
+
+@{
+    ViewBag.Title = "Chi tiết thẻ tích điểm";
+}
+
+<h2>Chi tiết</h2>
+
+<div>
+    <h4>Thẻ tích điểm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberCardNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemberCardNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberCardCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemberCardCategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Point)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Point)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Revenue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Revenue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifyDate)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MemberCardID }) |
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</p>

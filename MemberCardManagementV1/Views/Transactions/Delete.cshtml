@@ -1,0 +1,64 @@
+﻿@model MemberCardManagementV1.Models.Transaction
+
+@{
+    ViewBag.Title = "Xóa giao dịch tích điểm";
+}
+
+<h2>Xóa giao dịch tích điểm</h2>
+
+<h3>Bạn có chắc muốn xóa giao dịch tích điểm này không?</h3>
+<div>
+    <h4>Giao dịch tích điểm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberCardNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemberCardNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Point)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Point)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Revenue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Revenue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifyDate)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại danh sách", "Index")
+        </div>
+    }
+</div>

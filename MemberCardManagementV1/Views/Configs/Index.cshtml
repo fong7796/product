@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MemberCardManagementV1.Models.Config>
+
+@{
+    ViewBag.Title = "Danh sách chính sách tích điểm";
+}
+
+<h2>Danh sách chính sách tích điểm</h2>
+
+<p>
+    @Html.ActionLink("Thêm", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ConfigName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ConfigValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsDefault)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ConfigName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ConfigValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsDefault)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Edit", new { id=item.ConfigID }) |
+            @Html.ActionLink("Xem", "Details", new { id=item.ConfigID }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.ConfigID })
+        </td>
+    </tr>
+}
+
+</table>
